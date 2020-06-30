@@ -1,0 +1,19 @@
+<div id="loginWrapper">
+   <div ng-show="errorMsg" class="alert alert-danger">{{errorMsg}}</div>
+   <form name="form" ng-submit="loginHandler()" role="form" >
+      <div class="form-group">
+         <label for="username">Username</label>
+         <input type="text" name="username" ng-keyup="checkEmptyField()" id="username" class="form-control" ng-model="username" required>
+      </div>
+      <div class="form-group">
+         <label for="password">Password</label>
+         <input type="password" name="password" ng-keyup="checkEmptyField()" id="password" class="form-control" ng-model="password" required>
+      </div>
+      <div class="form-actions">
+         <button type="submit" ng-disabled="isDisabled" class="btn" ng-class="{'btn-success':!isDisabled, 'btn-secondary':isDisabled }">
+            <span ng-if="isLoading">Loading...</span>
+            <span ng-if="!isLoading">Login</span>
+         </button>
+      </div>
+   </form>
+</div>

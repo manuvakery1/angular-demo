@@ -1,0 +1,20 @@
+*{
+  margin:0;
+  padding: 0;
+  outline: 0;
+}
+body{
+  background:#f2f2f2 ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #3a3a3a;
+}
+#loginWrapper{
+  margin: 0px auto;
+  width: 350px;
+  margin-top: 50px;
+
+}
+#loginWrapper button{
+  min-width: 150px;
+}
